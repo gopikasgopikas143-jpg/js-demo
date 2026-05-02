@@ -176,7 +176,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,14,10,0.
 .conv-table td{padding:10px 14px;border-bottom:1px solid var(--cream2);color:var(--dark);}
 .conv-table tr:hover td{background:var(--cream2);}
 
-/* STAMP DUTY */
+.vp-road-item{padding:4px 8px;cursor:pointer;border-radius:6px;color:var(--dark);transition:background 0.15s;}
+.vp-road-item:hover{background:var(--cream2);}
+
+
 .duty-rates{margin-top:20px;}
 .duty-rate-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--cream);border-radius:8px;margin-bottom:8px;}
 .duty-rate-item .rate-name{font-size:0.88rem;font-weight:600;color:var(--dark);}
@@ -308,68 +311,6 @@ footer{background:var(--dark);padding:48px 8% 24px;border-top:1px solid rgba(201
   .section{padding:60px 5%;}
   .hero-content{padding:0 5%;}
   .hero-stats{margin:0 5%;}
-}
-/* vasthu */
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f0f0f5;min-height:100vh;padding:16px}
-.pro-wrap{background:#fff;border:1px solid #ddd;border-radius:12px;overflow:hidden;max-width:960px;margin:0 auto}
-.pro-header{background:#1a1a2e;color:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.pro-header-left{display:flex;align-items:center;gap:12px}
-.logo-box{width:44px;height:44px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:20px}
-.pro-title{font-size:17px;font-weight:bold;color:#fff}
-.pro-subtitle{font-size:12px;color:#a0a0c0;margin-top:2px}
-.pdf-btn{background:#2d2d5e;color:#fff;border:1px solid #4444aa;border-radius:6px;padding:8px 14px;font-size:13px;cursor:pointer}
-.pdf-btn:hover{background:#3d3d7e}
-.brand-section{padding:16px 20px;border-bottom:1px solid #eee}
-.brand-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
-.field-label{font-size:12px;color:#555;margin-bottom:4px;font-weight:bold}
-.field-input{width:100%;padding:8px 10px;border:1px solid #ccc;border-radius:6px;font-size:13px}
-.field-input:focus{outline:none;border-color:#4444aa}
-.field-hint{font-size:11px;color:#999;margin-top:3px}
-.two-panel{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid #eee}
-.panel-left{padding:16px 20px;border-right:1px solid #eee}
-.panel-right{padding:16px 20px}
-.panel-title{font-size:14px;font-weight:bold;color:#1a1a2e;margin-bottom:12px}
-.vastu-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.select-field{width:100%;padding:8px 10px;border:1px solid #ccc;border-radius:6px;font-size:13px;background:#fff}
-.road-list{border:1px solid #ccc;border-radius:6px;padding:4px;height:90px;overflow-y:auto;font-size:13px;background:#fff}
-.road-item{padding:4px 8px;cursor:pointer;border-radius:4px;color:#333}
-.road-item:hover{background:#f0f0f5}
-.road-item.selected{background:#1a1a2e;color:#fff}
-.mana-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
-.calc-btn{width:100%;padding:10px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;font-size:13px;cursor:pointer;margin-bottom:6px}
-.calc-btn:hover{background:#2d2d5e}
-.reset-btn{width:100%;padding:8px;background:#fff;color:#333;border:1px solid #ccc;border-radius:6px;font-size:13px;cursor:pointer}
-.reset-btn:hover{background:#f5f5f5}
-.result-box{background:#f8f8f8;border-radius:6px;padding:10px;margin-top:8px;font-size:12px;color:#555;line-height:1.6;min-height:60px}
-.result-value{font-size:15px;font-weight:bold;margin-bottom:4px}
-.good{color:#1D9E75}
-.warn{color:#BA7517}
-.bad{color:#E24B4A}
-.checkbox-section{padding:14px 20px;border-bottom:1px solid #eee}
-.section-label{font-size:12px;font-weight:bold;color:#555;margin-bottom:10px}
-.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.check-item{display:flex;align-items:flex-start;gap:8px;padding:8px;border:1px solid #eee;border-radius:6px;cursor:pointer;transition:background 0.15s}
-.check-item:hover{background:#f5f5f5}
-.check-item.checked{background:#e8f5ee;border-color:#1D9E75}
-.check-item input{margin-top:2px;flex-shrink:0;cursor:pointer}
-.check-text{font-size:12px;color:#333;line-height:1.4}
-.score-section{padding:14px 20px}
-.score-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.score-display{display:flex;align-items:center;gap:16px}
-.score-num{font-size:28px;font-weight:bold;color:#1a1a2e}
-.score-label{font-size:12px;color:#777}
-.score-bar{width:180px;height:8px;background:#eee;border-radius:4px;overflow:hidden;margin-top:6px}
-.score-fill{height:100%;border-radius:4px;transition:width 0.4s}
-.score-verdict{font-size:13px;font-weight:bold}
-.main-calc-btn{padding:10px 24px;background:#1a1a2e;color:#fff;border:none;border-radius:6px;font-size:13px;cursor:pointer}
-.main-calc-btn:hover{background:#2d2d5e}
-@media(max-width:600px){
-  .two-panel{grid-template-columns:1fr}
-  .panel-left{border-right:none;border-bottom:1px solid #eee}
-  .brand-grid{grid-template-columns:1fr}
-  .check-grid{grid-template-columns:1fr 1fr}
-  .vastu-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -672,7 +613,6 @@ body{font-family:Arial,sans-serif;background:#f0f0f5;min-height:100vh;padding:16
     <button class="tool-tab" onclick="showTool('roi',this)">📈 ROI கணக்கீடு</button>
     <button class="tool-tab" onclick="showTool('value',this)">💰 சொத்து மதிப்பு</button>
     <button class="tool-tab" onclick="showTool('vastu',this)">🧭 வாஸ்து சாஸ்திரம்</button>
-    <button class="tool-tab" onclick="showTool('compare',this)">🔍 நிலம் ஒப்பீடு</button>
   </div>
 
   <div class="tool-panels">
@@ -1026,301 +966,149 @@ body{font-family:Arial,sans-serif;background:#f0f0f5;min-height:100vh;padding:16
       </div>
     </div>
 
-    <!-- VASTU TOOL -->
-   
-<div class="pro-wrap">
-  <div class="pro-header">
-    <div class="pro-header-left">
-      <div class="logo-box" id="logoPreview">🏠</div>
-      <div>
-        <div class="pro-title">வாஸ்து சாஸ்திரம் – தொழில்முனைவோர் PRO கருவி</div>
-        <div class="pro-subtitle">மனை/வீடு ஆய்வு + 16-சுட்டி சரிபார்ப்பு + மதிப்பெண் + PDF</div>
-      </div>
-    </div>
-    <button class="pdf-btn" onclick="generatePDF()">📄 PDF சேமிக்க</button>
-  </div>
+    <!-- VASTU PRO TOOL -->
+    <div class="tool-panel" id="panel-vastu">
+      <div style="max-width:900px;margin:0 auto;">
 
-  <div class="brand-section">
-    <div class="brand-grid">
-      <div>
-        <div class="field-label">நிறுவன பெயர் (Brand)</div>
-        <input class="field-input" id="brandName" placeholder="உங்கள் நிறுவனம் / Real Estate Brand" />
-      </div>
-      <div>
-        <div class="field-label">லோகோ URL</div>
-        <input class="field-input" id="logoUrl" placeholder="https://example.com/logo.png" oninput="previewLogo(this.value)" />
-        <div class="field-hint">Google Drive/Images நேரடி படம் URL பயன்படுத்தவும்</div>
-      </div>
-      <div>
-        <div class="field-label">தொடர்பு எண்</div>
-        <input class="field-input" id="phone" placeholder="+91-9xxxxxxxxx" />
-      </div>
-    </div>
-  </div>
-
-  <div class="two-panel">
-    <div class="panel-left">
-      <div class="panel-title">🧭 16-சுட்டி Vastu Checker</div>
-      <div class="vastu-grid">
-        <div>
-          <div class="field-label">நில முகப்பு</div>
-          <select class="select-field" id="plotFacing">
-            <option value="">தேர்வு</option>
-            <option>கிழக்கு (East)</option>
-            <option>மேற்கு (West)</option>
-            <option>வடக்கு (North)</option>
-            <option>தெற்கு (South)</option>
-            <option>NE (வடகிழக்கு)</option>
-            <option>NW (வடமேற்கு)</option>
-            <option>SE (தென்கிழக்கு)</option>
-            <option>SW (தென்மேற்கு)</option>
-          </select>
-        </div>
-        <div>
-          <div class="field-label">நில வடிவம்</div>
-          <select class="select-field" id="plotShape">
-            <option value="">தேர்வு</option>
-            <option>சதுரம் (Square)</option>
-            <option>செவ்வகம் (Rectangle)</option>
-            <option>L வடிவம்</option>
-            <option>முக்கோணம் (Triangle)</option>
-            <option>ஒழுங்கற்றது (Irregular)</option>
-          </select>
-        </div>
-        <div>
-          <div class="field-label">நில சாய்வு</div>
-          <select class="select-field" id="plotSlope">
-            <option value="">தேர்வு</option>
-            <option>NE சாய்வு (சிறந்தது)</option>
-            <option>East சாய்வு</option>
-            <option>North சாய்வு</option>
-            <option>South சாய்வு (தவிர்க்க)</option>
-            <option>West சாய்வு (தவிர்க்க)</option>
-            <option>SW சாய்வு (மிகவும் மோசம்)</option>
-            <option>சம நிலை (Level)</option>
-          </select>
-        </div>
-        <div>
-          <div class="field-label">சாலைகள் (Multiple)</div>
-          <div class="road-list" id="roadList">
-            <div class="road-item" onclick="toggleRoad(this,'தெற்கு சாலை')">தெற்கு சாலை</div>
-            <div class="road-item" onclick="toggleRoad(this,'மேற்கு சாலை')">மேற்கு சாலை</div>
-            <div class="road-item" onclick="toggleRoad(this,'NE end road')">NE end road</div>
-            <div class="road-item" onclick="toggleRoad(this,'T / Y ஜங்ஷன்')">T / Y ஜங்ஷன்</div>
-            <div class="road-item" onclick="toggleRoad(this,'கிழக்கு சாலை')">கிழக்கு சாலை</div>
-            <div class="road-item" onclick="toggleRoad(this,'வடக்கு சாலை')">வடக்கு சாலை</div>
-            <div class="road-item" onclick="toggleRoad(this,'சாலை இல்லை')">சாலை இல்லை</div>
+        <!-- Header Bar -->
+        <div style="background:var(--dark);border-radius:16px 16px 0 0;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div id="vp-logo-box" style="width:44px;height:44px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🏠</div>
+            <div>
+              <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;">வாஸ்து சாஸ்திரம் – தொழில்முனைவோர் PRO கருவி</div>
+              <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:2px;">மனை/வீடு ஆய்வு + 16-சுட்டி சரிபார்ப்பு + மதிப்பெண் + PDF</div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel-right">
-      <div class="panel-title">📐 Manaiyadi Shastram – அறை அளவு விளைவு</div>
-      <div class="mana-inputs">
-        <div>
-          <div class="field-label">நீளம் (அடி)</div>
-          <input class="field-input" id="manaLength" type="number" placeholder="உ.ம்., 10" min="1" />
-        </div>
-        <div>
-          <div class="field-label">அகலம் (அடி)</div>
-          <input class="field-input" id="manaWidth" type="number" placeholder="உ.ம்., 12" min="1" />
-        </div>
-      </div>
-      <button class="calc-btn" onclick="calcMana()">📐 கணக்கிட</button>
-      <button class="reset-btn" onclick="resetMana()">🔄 Reset</button>
-      <div class="result-box" id="manaResult">
-        <span style="color:#aaa;font-size:12px">நீளம் மற்றும் அகலம் உள்ளிட்டு கணக்கிட கிளிக் செய்யவும்.</span>
-      </div>
-      <div style="margin-top:8px;font-size:11px;color:#999;line-height:1.5">
-        குறிப்பு: சில அளவுகள் நல்லது/மிதமானது/தவிர்க்க வேண்டியது என்ற விளைவை தெரிவிக்கும் (அடி அளவுகளில்). ஆதாரம்: Manaiyadi/Vastu குறிப்புகள்.
-      </div>
-    </div>
-  </div>
-
-  <div class="checkbox-section">
-    <div class="section-label">☑ அறை/உள்ளமைப்பு தேர்வுகள்</div>
-    <div class="check-grid" id="checkGrid"></div>
-  </div>
-
-  <div class="score-section">
-    <div class="score-row">
-      <div class="score-display">
-        <div>
-          <div class="score-label">வாஸ்து மதிப்பெண்</div>
-          <div style="display:flex;align-items:baseline;gap:6px">
-            <div class="score-num" id="scoreNum">0</div>
-            <div style="font-size:14px;color:#777">/100</div>
-          </div>
-          <div class="score-bar">
-            <div class="score-fill" id="scoreFill" style="width:0%;background:#1D9E75"></div>
-          </div>
-        </div>
-        <div class="score-verdict" id="scoreVerdict" style="color:#aaa">மதிப்பெண் கணக்கிட கிழே கிளிக் செய்யவும்</div>
-      </div>
-      <button class="main-calc-btn" onclick="calcTotalScore()">🌟 மதிப்பெண் கணக்கிட</button>
-    </div>
-  </div>
-</div>
-        <!-- 16 Point Checker -->
-        <p style="font-size:0.82rem;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;">🧭 நில அமைப்பு</p>
-        <div class="form-row">
-          <div class="form-group">
-            <label>நில முகப்பு திசை</label>
-            <select id="v-facing">
-              <option value="east">கிழக்கு ✅ சிறந்தது</option>
-              <option value="north">வடக்கு ✅ நல்லது</option>
-              <option value="south">தெற்கு ⚠️ கவனம்</option>
-              <option value="west">மேற்கு ⚠️ மிதம்</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>நில வடிவம்</label>
-            <select id="v-shape">
-              <option value="square">சதுரம் ✅</option>
-              <option value="rect">செவ்வகம் ✅</option>
-              <option value="tri">மூவரிசை ❌</option>
-              <option value="L">L-வடிவம் ❌</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>நில சாய்வு (தாழ்வான பக்கம்)</label>
-            <select id="v-slope">
-              <option value="NE">வடகிழக்கு (NE) ✅ சிறந்தது</option>
-              <option value="NW">வடமேற்கு (NW) ⚠️</option>
-              <option value="SE">தென்கிழக்கு (SE) ⚠️</option>
-              <option value="SW">தென்மேற்கு (SW) ❌ தவிர்க்கவும்</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>சாலைகள் (ஒன்று அல்லது மேலும்)</label>
-            <select id="v-road">
-              <option value="east">கிழக்கு சாலை ✅</option>
-              <option value="north">வடக்கு சாலை ✅</option>
-              <option value="NE">NE முனை சாலை ✅✅</option>
-              <option value="south">தெற்கு சாலை ⚠️</option>
-              <option value="west">மேற்கு சாலை ⚠️</option>
-              <option value="TY">T / Y ஜங்ஷன் ❌</option>
-            </select>
-          </div>
+          <button onclick="vpGeneratePDF()" style="background:#2d2d5e;color:#fff;border:1px solid #4444aa;border-radius:8px;padding:9px 16px;font-size:0.85rem;cursor:pointer;font-family:'DM Sans',sans-serif;">📄 PDF சேமிக்க</button>
         </div>
 
-        <p style="font-size:0.82rem;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1px;margin:20px 0 14px;">⚙️ அறை அமைப்பு சரிபார்ப்பு</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;" id="vastu-checks">
-          <!-- checkboxes rendered by JS -->
-        </div>
-
-        <p style="font-size:0.82rem;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1px;margin:20px 0 14px;">📏 மனையடி சாஸ்திரம் – அறை அளவு விளைவு</p>
-        <div class="form-row">
-          <div class="form-group">
-            <label>நீளம் (அடி)</label>
-            <input type="number" id="vastu-len" placeholder="எ.கா. 40" oninput="checkManaiyadi()">
-          </div>
-          <div class="form-group">
-            <label>அகலம் (அடி)</label>
-            <input type="number" id="vastu-wid" placeholder="எ.கா. 30" oninput="checkManaiyadi()">
-          </div>
-        </div>
-        <div id="manaiyadi-result" style="display:none;background:var(--cream);border-radius:10px;padding:14px;margin-bottom:16px;font-size:0.88rem;"></div>
-
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <button class="calc-btn" onclick="calcVastu()" style="flex:1;min-width:160px;">🔎 மதிப்பெண் கணக்கிடு</button>
-          <button class="calc-btn" onclick="resetVastu()" style="flex:1;min-width:120px;background:var(--cream2);color:var(--dark);">🧼 மீட்டமை</button>
-          <button class="calc-btn" onclick="printVastu()" style="flex:1;min-width:160px;background:var(--dark);color:var(--gold);">📄 PDF சேமி</button>
-        </div>
-
-        <!-- VASTU RESULT -->
-        <div class="result-box" id="vastu-result" style="margin-top:20px;">
-          <div id="vastu-score-display" style="text-align:center;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:16px;">
-            <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;" id="vastu-score-num">—</div>
-            <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;">வாஸ்து மதிப்பெண் / 100</div>
-            <div id="vastu-grade" style="margin-top:8px;font-size:1rem;font-weight:700;"></div>
-          </div>
-          <div id="vastu-details" style="font-size:0.85rem;color:rgba(255,255,255,0.75);line-height:1.8;"></div>
-        </div>
-
-        <!-- LEAD FORM -->
-        <div style="background:var(--cream2);border-radius:14px;padding:24px;margin-top:24px;">
-          <p style="font-size:0.82rem;font-weight:700;color:var(--dark);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">📮 ஆலோசனைக்கு தொடர்பு கொள்ளுங்கள்</p>
+        <!-- Brand Section -->
+        <div style="background:var(--white);border:1px solid var(--cream2);border-top:none;padding:18px 24px;border-bottom:1px solid var(--cream2);">
           <div class="form-row">
-            <div class="form-group" style="margin-bottom:12px">
-              <label>பெயர்</label>
-              <input type="text" id="vastu-name" placeholder="உங்கள் பெயர்">
+            <div class="form-group" style="margin-bottom:0">
+              <label>நிறுவன பெயர் (Brand)</label>
+              <input type="text" id="vp-brand" placeholder="உங்கள் நிறுவனம் / Real Estate Brand" value="J Square Housing">
             </div>
-            <div class="form-group" style="margin-bottom:12px">
-              <label>தொலைபேசி</label>
-              <input type="tel" id="vastu-contact" placeholder="மொபைல் எண்">
+            <div class="form-group" style="margin-bottom:0">
+              <label>லோகோ URL</label>
+              <input type="text" id="vp-logo-url" placeholder="https://example.com/logo.png" oninput="vpPreviewLogo(this.value)">
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label>தொடர்பு எண்</label>
+              <input type="text" id="vp-phone" placeholder="+91-9xxxxxxxxx" value="98765 43210">
             </div>
           </div>
-          <div class="form-group" style="margin-bottom:12px">
-            <label>மின்னஞ்சல்</label>
-            <input type="email" id="vastu-email" placeholder="உங்கள் email">
-          </div>
-          <div class="form-group" style="margin-bottom:12px">
-            <label>செய்தி / தேவைகள்</label>
-            <input type="text" id="vastu-msg" placeholder="வாஸ்து ஆலோசனை தேவை...">
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;">
-            <button class="calc-btn" onclick="submitVastuLead()" style="flex:1;">✉️ அனுப்பு</button>
-            <button class="calc-btn" onclick="copyVastuSummary()" style="flex:1;background:var(--dark);color:var(--gold);">📋 சுருக்கம் நகலெடு</button>
-          </div>
-        </div>
-        <div style="margin-top:16px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:10px;padding:12px;font-size:0.78rem;color:var(--text-muted);line-height:1.6;">
-          ⚖️ <strong>குறிப்பு:</strong> இது ஒரு வழிகாட்டுதல் கருவி. தள நிலைமைகள், அரசாங்க விதிகள் மற்றும் நவீன கட்டிட பொறியியல் இணக்கத்துடன் பயன்படுத்தவும். சான்றிதழ் பெற்ற வாஸ்து நிபுணரின் ஆலோசனை பெறவும்.
-        </div>
-      </div>
-    </div>
-
-    <!-- PLOT COMPARISON -->
-    <div class="tool-panel" id="panel-compare">
-      <div class="tool-card" style="max-width:900px;">
-        <h2>🔍 நிலம் ஒப்பீட்டு அட்டவணை</h2>
-        <p class="tool-desc">சேலம் மாவட்டம் – வெவ்வேறு நிலங்களை ஒப்பிட்டு சிறந்ததை தேர்ந்தெடுங்கள்</p>
-
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;align-items:flex-end;">
-          <div class="form-group" style="margin:0;flex:1;min-width:180px;">
-            <label>பகுதி தேர்வு (Plot 1)</label>
-            <select id="cmp-area1" onchange="updateCompare()">
-              <option value="">— தேர்வு செய்யவும் —</option>
-            </select>
-          </div>
-          <div class="form-group" style="margin:0;flex:1;min-width:180px;">
-            <label>பகுதி தேர்வு (Plot 2)</label>
-            <select id="cmp-area2" onchange="updateCompare()">
-              <option value="">— தேர்வு செய்யவும் —</option>
-            </select>
-          </div>
-          <div class="form-group" style="margin:0;flex:1;min-width:180px;">
-            <label>பகுதி தேர்வு (Plot 3 – விருப்பம்)</label>
-            <select id="cmp-area3" onchange="updateCompare()">
-              <option value="">— இல்லை —</option>
-            </select>
-          </div>
+          <div style="font-size:0.75rem;color:var(--text-muted);margin-top:6px;">Google Drive/Images நேரடி படம் URL பயன்படுத்தவும்</div>
         </div>
 
-        <div style="overflow-x:auto;">
-          <table class="conv-table" id="compare-table" style="min-width:600px;">
-            <thead>
-              <tr>
-                <th>அம்சம்</th>
-                <th id="cmp-h1">Plot 1</th>
-                <th id="cmp-h2">Plot 2</th>
-                <th id="cmp-h3" style="display:none">Plot 3</th>
-              </tr>
-            </thead>
-            <tbody id="compare-tbody">
-              <tr><td colspan="4" style="text-align:center;color:var(--text-muted);padding:30px;">மேலே பகுதி தேர்வு செய்யவும்</td></tr>
-            </tbody>
-          </table>
+        <!-- Two Panel -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--white);border:1px solid var(--cream2);border-top:none;">
+
+          <!-- Left: 16-சுட்டி Checker -->
+          <div style="padding:20px 24px;border-right:1px solid var(--cream2);">
+            <p style="font-size:0.85rem;font-weight:700;color:var(--dark);margin-bottom:14px;">🧭 16-சுட்டி Vastu Checker</p>
+            <div class="form-row" style="margin-bottom:12px;">
+              <div class="form-group" style="margin-bottom:0">
+                <label>நில முகப்பு</label>
+                <select id="vp-facing">
+                  <option value="">தேர்வு</option>
+                  <option value="10">கிழக்கு (East)</option>
+                  <option value="6">மேற்கு (West)</option>
+                  <option value="9">வடக்கு (North)</option>
+                  <option value="5">தெற்கு (South)</option>
+                  <option value="10">NE (வடகிழக்கு)</option>
+                  <option value="7">NW (வடமேற்கு)</option>
+                  <option value="5">SE (தென்கிழக்கு)</option>
+                  <option value="3">SW (தென்மேற்கு)</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom:0">
+                <label>நில வடிவம்</label>
+                <select id="vp-shape">
+                  <option value="">தேர்வு</option>
+                  <option value="10">சதுரம் (Square)</option>
+                  <option value="8">செவ்வகம் (Rectangle)</option>
+                  <option value="4">L வடிவம்</option>
+                  <option value="2">முக்கோணம் (Triangle)</option>
+                  <option value="1">ஒழுங்கற்றது (Irregular)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row" style="margin-bottom:12px;">
+              <div class="form-group" style="margin-bottom:0">
+                <label>நில சாய்வு</label>
+                <select id="vp-slope">
+                  <option value="">தேர்வு</option>
+                  <option value="10">NE சாய்வு (சிறந்தது)</option>
+                  <option value="8">East சாய்வு</option>
+                  <option value="8">North சாய்வு</option>
+                  <option value="3">South சாய்வு (தவிர்க்க)</option>
+                  <option value="3">West சாய்வு (தவிர்க்க)</option>
+                  <option value="1">SW சாய்வு (மிகவும் மோசம்)</option>
+                  <option value="6">சம நிலை (Level)</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom:0">
+                <label>சாலைகள் (Multiple)</label>
+                <div id="vp-road-list" style="border:1.5px solid var(--cream2);border-radius:10px;padding:4px;height:88px;overflow-y:auto;font-size:0.82rem;background:var(--cream);">
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'தெற்கு சாலை')">தெற்கு சாலை</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'மேற்கு சாலை')">மேற்கு சாலை</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'NE end road')">NE end road</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'T / Y ஜங்ஷன்')">T / Y ஜங்ஷன்</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'கிழக்கு சாலை')">கிழக்கு சாலை</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'வடக்கு சாலை')">வடக்கு சாலை</div>
+                  <div class="vp-road-item" onclick="vpToggleRoad(this,'சாலை இல்லை')">சாலை இல்லை</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Manaiyadi -->
+          <div style="padding:20px 24px;">
+            <p style="font-size:0.85rem;font-weight:700;color:var(--dark);margin-bottom:14px;">📐 Manaiyadi Shastram – அறை அளவு விளைவு</p>
+            <div class="form-row" style="margin-bottom:12px;">
+              <div class="form-group" style="margin-bottom:0">
+                <label>நீளம் (அடி)</label>
+                <input type="number" id="vp-len" placeholder="உ.ம்., 10" min="1">
+              </div>
+              <div class="form-group" style="margin-bottom:0">
+                <label>அகலம் (அடி)</label>
+                <input type="number" id="vp-wid" placeholder="உ.ம்., 12" min="1">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="vpCalcMana()" style="margin-bottom:8px;">📐 கணக்கிட</button>
+            <button onclick="vpResetMana()" style="width:100%;padding:10px;background:var(--cream2);color:var(--dark);border:none;border-radius:10px;font-size:0.9rem;cursor:pointer;font-family:'DM Sans',sans-serif;">🔄 Reset</button>
+            <div id="vp-mana-result" style="background:var(--cream);border-radius:10px;padding:12px;margin-top:10px;font-size:0.82rem;color:var(--text-muted);min-height:58px;">
+              நீளம் மற்றும் அகலம் உள்ளிட்டு கணக்கிட கிளிக் செய்யவும்.
+            </div>
+            <div style="margin-top:8px;font-size:0.72rem;color:var(--text-muted);line-height:1.5;">குறிப்பு: சில அளவுகள் நல்லது/மிதமானது/தவிர்க்க வேண்டியது என்ற விளைவை தெரிவிக்கும். ஆதாரம்: Manaiyadi/Vastu குறிப்புகள்.</div>
+          </div>
         </div>
-        <div style="margin-top:16px;background:var(--cream);border-radius:10px;padding:14px;font-size:0.8rem;color:var(--text-muted);">
-          ⚠️ விலைகள் சந்தை மதிப்பீட்டு அடிப்படையில். உண்மையான பரிவர்த்தனை விலை வேறுபடலாம்.
+
+        <!-- Checkboxes -->
+        <div style="background:var(--white);border:1px solid var(--cream2);border-top:none;padding:18px 24px;">
+          <p style="font-size:0.82rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">☑ அறை/உள்ளமைப்பு தேர்வுகள்</p>
+          <div id="vp-check-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;"></div>
         </div>
-        <div style="text-align:center;margin-top:20px;">
-          <button class="calc-btn" onclick="showPage('contact')" style="max-width:300px;margin:0 auto;">📞 J Square நிபுணரிடம் கேள் →</button>
+
+        <!-- Score Section -->
+        <div style="background:var(--white);border:1px solid var(--cream2);border-top:none;border-radius:0 0 16px 16px;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div>
+              <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">வாஸ்து மதிப்பெண்</div>
+              <div style="display:flex;align-items:baseline;gap:4px;">
+                <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--dark);" id="vp-score-num">0</div>
+                <div style="font-size:0.9rem;color:var(--text-muted);">/100</div>
+              </div>
+              <div style="width:180px;height:8px;background:var(--cream2);border-radius:4px;overflow:hidden;margin-top:4px;">
+                <div id="vp-score-bar" style="height:100%;border-radius:4px;width:0%;background:var(--green);transition:width 0.4s;"></div>
+              </div>
+            </div>
+            <div id="vp-verdict" style="font-size:0.9rem;font-weight:700;color:var(--text-muted);">மதிப்பெண் கணக்கிட கிழே கிளிக் செய்யவும்</div>
+          </div>
+          <button class="calc-btn" onclick="vpCalcScore()" style="min-width:200px;">🌟 மதிப்பெண் கணக்கிட</button>
         </div>
+
       </div>
     </div>
 
@@ -1770,154 +1558,6 @@ const areaData = {
   ammapet:{price:3300,growth:6.1,infra:7.6}
 };
 
-var selectedRoads = [];
-var checkedItems = {};
-
-var checkboxData = [
-  {id:'poojai',  label:'பூஜை அறை NE'},
-  {id:'kitchen', label:'சமையலறை SE'},
-  {id:'master',  label:'மாஸ்டர் Bedroom SW'},
-  {id:'stair',   label:'படிக்கட்டு clockwise'},
-  {id:'ug',      label:'Underground tank NE'},
-  {id:'oh',      label:'Overhead tank SW'},
-  {id:'balcony', label:'Balcony/Veranda NE/E/N'},
-  {id:'mirror',  label:'S/W சுவரில் கண்ணாடி இல்லை'},
-  {id:'toilet',  label:'Toilet seat North–South'},
-  {id:'swwall',  label:'SW சுவர் உயரம் > NE சுவர்'},
-  {id:'heavysw', label:'கனபொருட்கள் SW/S/W'},
-  {id:'neopen',  label:'NE open/park/water'},
-  {id:'guard',   label:'Guard room NW அல்ல'},
-  {id:'septic',  label:'Septic NW↔N / E↔SE'},
-  {id:'maindoor',label:'Main door East/North'},
-  {id:'compound',label:'Compound wall SW உயரம்'}
-];
-
-function initCheckboxes() {
-  var g = document.getElementById('checkGrid');
-  g.innerHTML = '';
-  checkboxData.forEach(function(item) {
-    var div = document.createElement('div');
-    div.className = 'check-item';
-    div.id = 'ci_' + item.id;
-    div.innerHTML = '<input type="checkbox" id="cb_' + item.id + '" onchange="toggleCheck(\'' + item.id + '\')" />'
-      + '<label for="cb_' + item.id + '" class="check-text" style="cursor:pointer">' + item.label + '</label>';
-    g.appendChild(div);
-  });
-}
-
-function toggleCheck(id) {
-  var cb = document.getElementById('cb_' + id);
-  var ci = document.getElementById('ci_' + id);
-  checkedItems[id] = cb.checked;
-  if (cb.checked) { ci.classList.add('checked'); }
-  else { ci.classList.remove('checked'); }
-}
-
-function toggleRoad(el, road) {
-  var idx = selectedRoads.indexOf(road);
-  if (idx > -1) { selectedRoads.splice(idx, 1); el.classList.remove('selected'); }
-  else { selectedRoads.push(road); el.classList.add('selected'); }
-}
-
-var manaGood = [10,12,14,15,16,18,20,24,25,28,30];
-var manaWarn = [11,13,17,19,22,26];
-
-function calcMana() {
-  var len = parseFloat(document.getElementById('manaLength').value);
-  var wid = parseFloat(document.getElementById('manaWidth').value);
-  var box = document.getElementById('manaResult');
-  if (!len || !wid || len <= 0 || wid <= 0) {
-    box.innerHTML = '<span style="color:#E24B4A">சரியான நீளம் மற்றும் அகலம் உள்ளிடவும்.</span>';
-    return;
-  }
-  var area = len * wid;
-  var ratio = Math.max(len, wid) / Math.min(len, wid);
-  var nearest = Math.round(Math.sqrt(area));
-  var status = manaGood.indexOf(nearest) > -1 ? 'good' : (manaWarn.indexOf(nearest) > -1 ? 'warn' : 'bad');
-  var statusText = status === 'good' ? '✅ நல்லது (சிறந்தது)' : (status === 'warn' ? '⚠️ மிதமானது (கவனம்)' : '❌ தவிர்க்க வேண்டியது');
-  var ratioNote = ratio > 2 ? 'நீண்ட வடிவம் – வாஸ்து சரி இல்லை.' : (ratio <= 1.5 ? 'சிறந்த விகிதம்.' : 'ஏற்றுக்கொள்ளக்கூடிய விகிதம்.');
-  box.innerHTML = '<div class="result-value ' + status + '">' + statusText + '</div>'
-    + '<div style="margin-top:4px">பரப்பு: <b>' + area + '</b> சதுர அடி &nbsp;|&nbsp; விகிதம்: <b>' + ratio.toFixed(2) + '</b></div>'
-    + '<div style="margin-top:2px">' + ratioNote + '</div>'
-    + '<div style="margin-top:4px;font-size:11px;color:#999">மனையடி சாஸ்திர அடிப்படை: √பரப்பு ≈ ' + nearest + ' அடி</div>';
-}
-
-function resetMana() {
-  document.getElementById('manaLength').value = '';
-  document.getElementById('manaWidth').value = '';
-  document.getElementById('manaResult').innerHTML = '<span style="color:#aaa;font-size:12px">நீளம் மற்றும் அகலம் உள்ளிட்டு கணக்கிட கிளிக் செய்யவும்.</span>';
-}
-
-var facingScore = {'கிழக்கு (East)':10,'வடக்கு (North)':9,'NE (வடகிழக்கு)':10,'NW (வடமேற்கு)':7,'மேற்கு (West)':6,'தெற்கு (South)':5,'SE (தென்கிழக்கு)':5,'SW (தென்மேற்கு)':3};
-var shapeScore  = {'சதுரம் (Square)':10,'செவ்வகம் (Rectangle)':8,'L வடிவம்':4,'முக்கோணம் (Triangle)':2,'ஒழுங்கற்றது (Irregular)':1};
-var slopeScore  = {'NE சாய்வு (சிறந்தது)':10,'East சாய்வு':8,'North சாய்வு':8,'சம நிலை (Level)':6,'South சாய்வு (தவிர்க்க)':3,'West சாய்வு (தவிர்க்க)':3,'SW சாய்வு (மிகவும் மோசம்)':1};
-
-function calcTotalScore() {
-  var f  = facingScore[document.getElementById('plotFacing').value] || 0;
-  var s  = shapeScore[document.getElementById('plotShape').value]   || 0;
-  var sl = slopeScore[document.getElementById('plotSlope').value]   || 0;
-  var basicScore = (f + s + sl) / 30 * 40;
-  var checked = 0;
-  checkboxData.forEach(function(item) { if (checkedItems[item.id]) checked++; });
-  var total = Math.min(100, Math.round(basicScore + (checked / 16) * 60));
-  document.getElementById('scoreNum').textContent = total;
-  var fill = document.getElementById('scoreFill');
-  fill.style.width = total + '%';
-  var verdict, color;
-  if      (total >= 80) { verdict = '🌟 சிறந்த வாஸ்து';       color = '#1D9E75'; }
-  else if (total >= 60) { verdict = '✅ நல்ல வாஸ்து';          color = '#3B6D11'; }
-  else if (total >= 40) { verdict = '⚠️ சராசரி வாஸ்து';       color = '#BA7517'; }
-  else if (total >= 20) { verdict = '❌ குறைபாடுகள் உள்ளன';   color = '#E24B4A'; }
-  else                  { verdict = '🚫 மோசமான வாஸ்து';       color = '#A32D2D'; }
-  fill.style.background = color;
-  var v = document.getElementById('scoreVerdict');
-  v.textContent = verdict;
-  v.style.color = color;
-}
-
-function previewLogo(url) {
-  var box = document.getElementById('logoPreview');
-  if (url && url.startsWith('http')) {
-    box.innerHTML = '<img src="' + url + '" style="width:36px;height:36px;object-fit:contain;border-radius:4px" onerror="this.style.display=\'none\'" />';
-  } else {
-    box.textContent = '🏠';
-  }
-}
-
-function generatePDF() {
-  var brand   = document.getElementById('brandName').value || 'வாஸ்து PRO';
-  var phone   = document.getElementById('phone').value || '';
-  var score   = document.getElementById('scoreNum').textContent;
-  var verdict = document.getElementById('scoreVerdict').textContent;
-  var checked = 0;
-  checkboxData.forEach(function(item) { if (checkedItems[item.id]) checked++; });
-  var rows = checkboxData.map(function(item) {
-    return '<tr><td style="padding:4px 8px;border-bottom:1px solid #eee">' + item.label + '</td>'
-      + '<td style="padding:4px 8px;border-bottom:1px solid #eee;color:' + (checkedItems[item.id] ? '#1D9E75' : '#E24B4A') + '">'
-      + (checkedItems[item.id] ? '✅ சரி' : '❌ இல்லை') + '</td></tr>';
-  }).join('');
-  var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>வாஸ்து PRO அறிக்கை</title>'
-    + '<style>body{font-family:Arial,sans-serif;padding:24px;color:#222}table{width:100%;border-collapse:collapse}td{font-size:13px}'
-    + '.header{background:#1a1a2e;color:#fff;padding:16px;border-radius:8px;margin-bottom:16px}'
-    + '.score{font-size:32px;font-weight:bold;color:#1a1a2e}.section{margin-bottom:16px;background:#f8f8f8;padding:12px;border-radius:6px}'
-    + '</style></head><body>'
-    + '<div class="header"><h2 style="margin:0;color:#fff">வாஸ்து சாஸ்திரம் PRO அறிக்கை</h2>'
-    + '<p style="margin:4px 0 0;color:#a0a0c0;font-size:13px">' + brand + (phone ? ' | ' + phone : '') + '</p></div>'
-    + '<div class="section"><b>வாஸ்து மதிப்பெண்:</b> <span class="score">' + score + '</span>/100 &nbsp; ' + verdict + '</div>'
-    + '<div class="section"><b>16-சுட்டி சரிபார்ப்பு</b> (' + checked + '/16 சரி)<br><br>'
-    + '<table><tr><th style="text-align:left;padding:4px 8px;background:#1a1a2e;color:#fff">அம்சம்</th>'
-    + '<th style="text-align:left;padding:4px 8px;background:#1a1a2e;color:#fff">நிலை</th></tr>' + rows + '</table></div>'
-    + '<div class="section"><b>நில முகப்பு:</b> ' + (document.getElementById('plotFacing').value || '-')
-    + ' | <b>வடிவம்:</b> ' + (document.getElementById('plotShape').value || '-')
-    + ' | <b>சாய்வு:</b> ' + (document.getElementById('plotSlope').value || '-') + '</div>'
-    + '<p style="font-size:11px;color:#888;margin-top:24px">இந்த அறிக்கை வாஸ்து PRO கருவி மூலம் உருவாக்கப்பட்டது.</p>'
-    + '</body></html>';
-  var w = window.open('', '_blank');
-  if (w) { w.document.write(html); w.document.close(); setTimeout(function() { w.print(); }, 500); }
-  else   { alert('PDF திறக்க popup தடுக்கப்பட்டுள்ளது. உலாவி அனுமதி கொடுக்கவும்.'); }
-}
-
-initCheckboxes();
 function calcValue() {
   const loc = document.getElementById('val-location').value;
   const area = parseFloat(document.getElementById('val-area').value) || 0;
@@ -2035,6 +1675,149 @@ function submitEnquiry() {
   const toast = document.getElementById('toast');
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 4000);
+}
+
+// ===== VASTU PRO TOOL =====
+var vpSelectedRoads = [];
+var vpChecked = {};
+var vpCheckboxData = [
+  {id:'poojai',  label:'பூஜை அறை NE'},
+  {id:'kitchen', label:'சமையலறை SE'},
+  {id:'master',  label:'மாஸ்டர் Bedroom SW'},
+  {id:'stair',   label:'படிக்கட்டு clockwise'},
+  {id:'ug',      label:'Underground tank NE'},
+  {id:'oh',      label:'Overhead tank SW'},
+  {id:'balcony', label:'Balcony/Veranda NE/E/N'},
+  {id:'mirror',  label:'S/W சுவரில் கண்ணாடி இல்லை'},
+  {id:'toilet',  label:'Toilet seat North–South'},
+  {id:'swwall',  label:'SW சுவர் உயரம் > NE சுவர்'},
+  {id:'heavysw', label:'கனபொருட்கள் SW/S/W'},
+  {id:'neopen',  label:'NE open/park/water'},
+  {id:'guard',   label:'Guard room NW அல்ல'},
+  {id:'septic',  label:'Septic NW↔N / E↔SE'},
+  {id:'maindoor',label:'Main door East/North'},
+  {id:'compound',label:'Compound wall SW உயரம்'}
+];
+
+(function initVPChecks(){
+  const g = document.getElementById('vp-check-grid');
+  if(!g) return;
+  vpCheckboxData.forEach(item => {
+    const div = document.createElement('div');
+    div.id = 'vp-ci-' + item.id;
+    div.style.cssText = 'display:flex;align-items:flex-start;gap:8px;padding:8px;border:1px solid var(--cream2);border-radius:8px;cursor:pointer;transition:background 0.15s;';
+    div.innerHTML = `<input type="checkbox" id="vp-cb-${item.id}" onchange="vpToggleCheck('${item.id}')" style="margin-top:2px;cursor:pointer;flex-shrink:0;">
+      <label for="vp-cb-${item.id}" style="font-size:0.82rem;color:var(--dark);cursor:pointer;line-height:1.4;">${item.label}</label>`;
+    g.appendChild(div);
+  });
+})();
+
+function vpToggleCheck(id){
+  const cb = document.getElementById('vp-cb-'+id);
+  const ci = document.getElementById('vp-ci-'+id);
+  vpChecked[id] = cb.checked;
+  ci.style.background = cb.checked ? '#e8f5ee' : '';
+  ci.style.borderColor = cb.checked ? '#2E7D52' : 'var(--cream2)';
+}
+
+function vpToggleRoad(el, road){
+  const idx = vpSelectedRoads.indexOf(road);
+  if(idx > -1){ vpSelectedRoads.splice(idx,1); el.style.background=''; el.style.color=''; }
+  else { vpSelectedRoads.push(road); el.style.background='var(--dark)'; el.style.color='#fff'; }
+}
+
+// style road items
+document.querySelectorAll('.vp-road-item').forEach(el=>{
+  el.style.cssText='padding:4px 8px;cursor:pointer;border-radius:6px;color:var(--dark);';
+  el.onmouseover=()=>{ if(!vpSelectedRoads.includes(el.textContent.trim())) el.style.background='var(--cream2)'; };
+  el.onmouseout=()=>{ if(!vpSelectedRoads.includes(el.textContent.trim())) el.style.background=''; };
+});
+
+var vpManaGood = [10,12,14,15,16,18,20,24,25,28,30];
+var vpManaWarn = [11,13,17,19,22,26];
+
+function vpCalcMana(){
+  const len = parseFloat(document.getElementById('vp-len').value);
+  const wid = parseFloat(document.getElementById('vp-wid').value);
+  const box = document.getElementById('vp-mana-result');
+  if(!len||!wid||len<=0||wid<=0){ box.innerHTML='<span style="color:var(--red)">சரியான நீளம் மற்றும் அகலம் உள்ளிடவும்.</span>'; return; }
+  const area = len*wid;
+  const ratio = Math.max(len,wid)/Math.min(len,wid);
+  const nearest = Math.round(Math.sqrt(area));
+  const status = vpManaGood.includes(nearest)?'good':(vpManaWarn.includes(nearest)?'warn':'bad');
+  const colors = {good:var_green,warn:'#BA7517',bad:var_red};
+  const labels = {good:'✅ நல்லது (சிறந்தது)',warn:'⚠️ மிதமானது (கவனம்)',bad:'❌ தவிர்க்க வேண்டியது'};
+  const ratioNote = ratio>2?'நீண்ட வடிவம் – வாஸ்து சரி இல்லை.':(ratio<=1.5?'சிறந்த விகிதம்.':'ஏற்றுக்கொள்ளக்கூடிய விகிதம்.');
+  box.innerHTML = `<div style="font-weight:700;color:${colors[status]};margin-bottom:4px;">${labels[status]}</div>
+    <div>பரப்பு: <b>${area}</b> சதுர அடி &nbsp;|&nbsp; விகிதம்: <b>${ratio.toFixed(2)}</b></div>
+    <div style="margin-top:2px;">${ratioNote}</div>
+    <div style="margin-top:4px;font-size:0.72rem;color:var(--text-muted);">மனையடி சாஸ்திர அடிப்படை: √பரப்பு ≈ ${nearest} அடி</div>`;
+}
+
+var var_green = '#2E7D52';
+var var_red   = '#B94040';
+
+function vpResetMana(){
+  document.getElementById('vp-len').value='';
+  document.getElementById('vp-wid').value='';
+  document.getElementById('vp-mana-result').innerHTML='நீளம் மற்றும் அகலம் உள்ளிட்டு கணக்கிட கிளிக் செய்யவும்.';
+}
+
+function vpPreviewLogo(url){
+  const box = document.getElementById('vp-logo-box');
+  if(url && url.startsWith('http')){
+    box.innerHTML = `<img src="${url}" style="width:36px;height:36px;object-fit:contain;border-radius:4px" onerror="this.style.display='none'">`;
+  } else { box.textContent='🏠'; }
+}
+
+function vpCalcScore(){
+  const fScore = parseInt(document.getElementById('vp-facing').value)||0;
+  const sScore = parseInt(document.getElementById('vp-shape').value)||0;
+  const slScore = parseInt(document.getElementById('vp-slope').value)||0;
+  const basicScore = (fScore+sScore+slScore)/30*40;
+  let checked=0;
+  vpCheckboxData.forEach(item=>{ if(vpChecked[item.id]) checked++; });
+  const total = Math.min(100, Math.round(basicScore + (checked/16)*60));
+  document.getElementById('vp-score-num').textContent = total;
+  const bar = document.getElementById('vp-score-bar');
+  bar.style.width = total+'%';
+  let verdict, color;
+  if(total>=80){verdict='🌟 சிறந்த வாஸ்து';color=var_green;}
+  else if(total>=60){verdict='✅ நல்ல வாஸ்து';color:'#3B6D11';color='#3B6D11';}
+  else if(total>=40){verdict='⚠️ சராசரி வாஸ்து';color='#BA7517';}
+  else if(total>=20){verdict='❌ குறைபாடுகள் உள்ளன';color=var_red;}
+  else{verdict='🚫 மோசமான வாஸ்து';color='#A32D2D';}
+  bar.style.background=color;
+  const v=document.getElementById('vp-verdict');
+  v.textContent=verdict; v.style.color=color;
+}
+
+function vpGeneratePDF(){
+  const brand = document.getElementById('vp-brand').value||'வாஸ்து PRO';
+  const phone = document.getElementById('vp-phone').value||'';
+  const score = document.getElementById('vp-score-num').textContent;
+  const verdict = document.getElementById('vp-verdict').textContent;
+  let checked=0;
+  vpCheckboxData.forEach(item=>{ if(vpChecked[item.id]) checked++; });
+  const rows = vpCheckboxData.map(item=>`<tr>
+    <td style="padding:4px 8px;border-bottom:1px solid #eee">${item.label}</td>
+    <td style="padding:4px 8px;border-bottom:1px solid #eee;color:${vpChecked[item.id]?'#2E7D52':'#B94040'}">${vpChecked[item.id]?'✅ சரி':'❌ இல்லை'}</td>
+  </tr>`).join('');
+  const html=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>வாஸ்து PRO அறிக்கை</title>
+  <style>body{font-family:Arial,sans-serif;padding:24px;color:#222}table{width:100%;border-collapse:collapse}td{font-size:13px}
+  .header{background:#1a1a2e;color:#fff;padding:16px;border-radius:8px;margin-bottom:16px}
+  .section{margin-bottom:16px;background:#f8f8f8;padding:12px;border-radius:6px}</style></head><body>
+  <div class="header"><h2 style="margin:0;color:#fff">வாஸ்து சாஸ்திரம் PRO அறிக்கை</h2>
+  <p style="margin:4px 0 0;color:#a0a0c0;font-size:13px">${brand}${phone?' | '+phone:''}</p></div>
+  <div class="section"><b>வாஸ்து மதிப்பெண்:</b> <span style="font-size:28px;font-weight:bold">${score}</span>/100 &nbsp; ${verdict}</div>
+  <div class="section"><b>16-சுட்டி சரிபார்ப்பு</b> (${checked}/16 சரி)<br><br>
+  <table><tr><th style="text-align:left;padding:4px 8px;background:#1a1a2e;color:#fff">அம்சம்</th>
+  <th style="text-align:left;padding:4px 8px;background:#1a1a2e;color:#fff">நிலை</th></tr>${rows}</table></div>
+  <p style="font-size:11px;color:#888;margin-top:24px">இந்த அறிக்கை J Square Housing வாஸ்து PRO கருவி மூலம் உருவாக்கப்பட்டது.</p>
+  </body></html>`;
+  const w=window.open('','_blank');
+  if(w){w.document.write(html);w.document.close();setTimeout(()=>w.print(),500);}
+  else alert('PDF திறக்க popup தடுக்கப்பட்டுள்ளது. உலாவி அனுமதி கொடுக்கவும்.');
 }
 
 // ===== INIT =====
